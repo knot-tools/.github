@@ -57,7 +57,7 @@ Branchés via le manifest d'extension public, **signés et pinnés par version**
 ### 🚚 &nbsp; Knot Migration
 Assistant de migration pour les instances Dolibarr venant d'anciennes versions ou d'autres ERP. Mapping de schéma, dry-run avec diff, transferts idempotents, journal d'audit.
 
-Utilisé en interne pour l'onboarding des nouveaux bêta-testeurs et clients.
+Actuellement utilisé en interne pour l'onboarding des nouveaux bêta-testeurs. Une distribution autonome est prévue ultérieurement.
 
 </td>
 <td width="50%" valign="top">
