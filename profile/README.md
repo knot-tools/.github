@@ -30,45 +30,105 @@
 
 ## 🧰 What we build
 
-A small family of products that turn **Dolibarr** into a real automation platform — a visual editor inside the ERP, a premium connector pack, a migration assistant for incoming instances, and the product website. **Knot Tools™** is the brand and the umbrella for everything below.
+A small family of products that turn **Dolibarr** into a real automation platform. **Knot Tools™** is the brand and the umbrella for everything below.
 
-### 🪢 Knot Core
+<table>
+<tr>
+<td width="50%" valign="top">
 
-The visual workflow editor that lives inside Dolibarr. Drag-and-drop canvas, native objects (third-parties, invoices, proposals, projects, stocks, contacts…), execution via the Dolibarr cron, multi-entity, granular permissions, full audit log. **Open source under GPL-3.0.**
+### 🪢 &nbsp; Knot Core
+The visual workflow editor that lives inside Dolibarr. Drag-and-drop canvas, native objects (third-parties, invoices, proposals, projects, stocks, contacts…), execution via the Dolibarr cron, multi-entity, granular permissions, full audit log.
 
-### 🧩 Knot Pro Pack
+**Open source under GPL-3.0.**
 
-Premium connectors that extend the Core palette: outbound HTTP, SaaS APIs (Stripe, Google Workspace, Shopify, …), AI chat nodes including local **Ollama**, SFTP, Telegram, multi-channel alert fan-out. Plugged into Knot via the public extension manifest, signed and version-pinned.
+</td>
+<td width="50%" valign="top">
 
-### 🚚 Knot Migration
+### 🧩 &nbsp; Knot Pro Pack
+Premium connectors that extend the Core palette: outbound HTTP, SaaS APIs (Stripe, Google Workspace, Shopify, …), AI chat nodes including local **Ollama**, SFTP, Telegram, multi-channel alert fan-out.
 
-A migration assistant for Dolibarr instances coming from older versions or from other ERPs. Schema mapping, dry-run with diff, idempotent transfers, audit trail. Used internally during onboarding of new beta testers and customers.
+Plugged in via the public extension manifest, **signed and version-pinned**.
 
-### 🌐 knot.tools
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-The product website — beta signup, news, pointers to the documentation as it opens up. Sober, no tracker, no cookie. Reach us at **`contact@knot.tools`** *(human reply, not an autoresponder)*.
+### 🚚 &nbsp; Knot Migration
+A migration assistant for Dolibarr instances coming from older versions or from other ERPs. Schema mapping, dry-run with diff, idempotent transfers, audit trail.
+
+Used internally during the onboarding of new beta testers and customers.
+
+</td>
+<td width="50%" valign="top">
+
+### 🌐 &nbsp; knot.tools
+The product website — beta signup, news, pointers to the documentation as it opens up.
+
+Sober, no tracker, no cookie. Reach us at **`contact@knot.tools`** *(human reply, not an autoresponder)*.
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## ✨ What sets it apart
 
-#### 🎨 &nbsp; Visual editor
-Vue Flow canvas, dark mode, **Cmd+K** palette, undo / redo, copy-paste, auto-layout, keyboard-first UX. Multi-tab inspector with live TypeScript validation and a Problems panel.
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
 
-#### 🪢 &nbsp; Native to Dolibarr
-Triggers on **Dolibarr V20+** native objects: third-parties, invoices, proposals, projects, stocks, contacts, tickets, agenda, members and more. No bridge, no proxy: Knot speaks Dolibarr's own object model.
+### 🎨
+**Visual editor**
 
-#### 🔒 &nbsp; 100 % self-hosted
-Your data stays on your stack. **AES-256-GCM** for credentials at rest, masked in every log and UI. **SSRF**-hardened outbound HTTP with **DNS-rebinding** mitigation (IP pinning via `CURLOPT_RESOLVE`). No mandatory cloud, no telemetry, no phone-home.
+Vue Flow canvas, dark mode, **Cmd+K** palette, undo / redo, keyboard-first UX, multi-tab inspector with live TypeScript validation.
 
-#### 🌍 &nbsp; Multi-entity
-Strict isolation per Dolibarr entity — every repository query filters on the active entity, every credential is scoped, every audit-log entry is tagged. **Granular Dolibarr permissions** are enforced for every Knot capability.
+</td>
+<td width="33%" align="center" valign="top">
 
-#### 🧬 &nbsp; Resilient by design
-Per-node retry policies, exponential backoff, error routes, idempotency keys, webhook and OAuth rate-limiting, structured execution traces, live execution inbox. A built-in **Doctor** view diagnoses module health.
+### 🪢
+**Native to Dolibarr**
 
-#### 🌐 &nbsp; International from day one
-Built-in strings in **FR · EN · ES · IT · PT · DE**. Every user-facing string passes through the Dolibarr translation layer — no hard-coded UI.
+Triggers on Dolibarr **V20+** native objects: third-parties, invoices, proposals, projects, stocks, contacts, tickets, agenda, members…
+
+</td>
+<td width="33%" align="center" valign="top">
+
+### 🔒
+**100% self-hosted**
+
+AES-256-GCM credentials at rest, **SSRF**-hardened HTTP with **DNS-rebinding** mitigation, no mandatory cloud, no telemetry, no phone-home.
+
+</td>
+</tr>
+<tr>
+<td width="33%" align="center" valign="top">
+
+### 🌍
+**Multi-entity**
+
+Strict isolation per Dolibarr entity. **Granular permissions** are enforced for every Knot capability, everywhere.
+
+</td>
+<td width="33%" align="center" valign="top">
+
+### 🧬
+**Resilient by design**
+
+Per-node retry policies, exponential backoff, error routes, idempotency keys, rate-limited webhooks and OAuth, structured execution traces.
+
+</td>
+<td width="33%" align="center" valign="top">
+
+### 🌐
+**International, day one**
+
+Built-in strings in **FR · EN · ES · IT · PT · DE**. Every user-facing string passes through Dolibarr's translation layer — no hard-coded UI.
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -76,26 +136,44 @@ Built-in strings in **FR · EN · ES · IT · PT · DE**. Every user-facing stri
 
 We treat reliability as a feature, not an afterthought.
 
-#### 🧪 &nbsp; Test suites
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🧪 &nbsp; Test suites
 **PHPUnit** — 605 tests · 2 013 assertions · 98 test files, with a target coverage of **80 %** on the engine and repository layers.<br>
 **Vitest** — frontend unit and component tests on every commit.<br>
-**Playwright** — end-to-end editor scenarios run on real Dolibarr instances.
+**Playwright** — end-to-end editor scenarios on real Dolibarr instances.
 
-#### 🔁 &nbsp; CI matrix
-Continuous integration runs the full backend test suite against **Dolibarr 20.0 · 21.0 · 22.0** combined with **PHP 8.1 · 8.2 · 8.3** (nine combinations) on every push to `main` and on every pull request, plus a frontend build + Vitest job and a PHPCS PSR-12 strict job. **No `|| true` workaround** anywhere — a regression fails the merge.
+</td>
+<td width="50%" valign="top">
 
-#### 🛡️ &nbsp; Continuous security
-A dedicated security workflow runs on every push and weekly on a schedule:
-**Gitleaks** (full-history secret scanning) · **`composer audit`** (PHP advisories) · **`npm audit`** (frontend production dependencies, high severity).
-Outbound HTTP goes through **`Knot\Security\UrlPolicy`**, which validates the host, blocks private and metadata IP ranges, and pins the resolved address through cURL to prevent **DNS-rebinding** attacks.
+### 🔁 &nbsp; CI matrix
+Backend test suite runs against **Dolibarr 20.0 · 21.0 · 22.0** combined with **PHP 8.1 · 8.2 · 8.3** (nine combinations) on every push and pull request, plus a frontend build + Vitest job and a PHPCS PSR-12 strict job. **No `\|\| true`** workaround anywhere — a regression fails the merge.
 
-#### 🔐 &nbsp; Cryptography & audit
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ &nbsp; Continuous security
+A dedicated workflow runs on every push and weekly on a schedule:<br>
+**Gitleaks** (full-history secret scanning) · **`composer audit`** (PHP advisories) · **`npm audit`** (frontend prod dependencies, high severity).<br>
+Outbound HTTP goes through `Knot\Security\UrlPolicy`, which validates the host, blocks private and metadata IP ranges, and pins the resolved address through cURL to prevent **DNS-rebinding** attacks.
+
+</td>
+<td width="50%" valign="top">
+
+### 🔐 &nbsp; Cryptography & audit
 Credentials encrypted at rest with **AES-256-GCM**, never logged, never exported.<br>
-Every sensitive action is logged in the immutable **`llx_knot_audit_log`** with full server-side search and CSV export.<br>
+Every sensitive action lands in the immutable `llx_knot_audit_log` with full server-side search and CSV export.<br>
 Release manifests for the Pro Pack are **Ed25519-signed** and pinned by the Core verifier.
 
-#### 📐 &nbsp; Code style
-**PSR-12 strict** with a project ruleset (`phpcs.xml.dist`) aligned with Symfony, Laravel, PHPUnit and Composer. **Conventional Commits** enforced on every repository.
+</td>
+</tr>
+</table>
+
+**Code style.** PSR-12 strict with a project ruleset (`phpcs.xml.dist`) aligned with Symfony, Laravel, PHPUnit and Composer. **Conventional Commits** enforced on every repository.
 
 ---
 
