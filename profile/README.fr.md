@@ -1,8 +1,11 @@
 <div align="center">
 
 <a href="https://knot.tools">
-  <img src="assets/knot-horizontal-light.png#gh-light-mode-only" alt="Knot Tools" width="520">
-  <img src="assets/knot-horizontal-dark.png#gh-dark-mode-only" alt="Knot Tools" width="520">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/knot-horizontal-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/knot-horizontal-light.png">
+    <img alt="Knot Tools — automatisation visuelle de workflows pour Dolibarr" src="assets/knot-horizontal-dark.png" width="520">
+  </picture>
 </a>
 
 ### Automatisation visuelle de workflows pour Dolibarr — et l'écosystème autour.
@@ -12,103 +15,99 @@
 [![Statut](https://img.shields.io/badge/statut-b%C3%AAta%20priv%C3%A9e-8B5CF6?style=flat-square)](https://knot.tools)
 [![Dolibarr](https://img.shields.io/badge/Dolibarr-V20%2B-1F2937?style=flat-square)](https://www.dolibarr.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net)
-[![Vue](https://img.shields.io/badge/Vue-3-42B883?style=flat-square&logo=vue.js&logoColor=white)](https://vuejs.org)
-[![Licence](https://img.shields.io/badge/Knot%20Core-GPL--3.0-EC4899?style=flat-square)](#licence)
-[![Marque](https://img.shields.io/badge/Knot%20Tools-™-8B5CF6?style=flat-square)](#marque)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vue](https://img.shields.io/badge/Vue-3.5-42B883?style=flat-square&logo=vue.js&logoColor=white)](https://vuejs.org)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Tests](https://img.shields.io/badge/tests-PHPUnit_·_Vitest_·_Playwright-EC4899?style=flat-square)](#-fiabilit%C3%A9--qualit%C3%A9)
+[![Style](https://img.shields.io/badge/style-PSR--12-1F2937?style=flat-square)](https://www.php-fig.org/psr/psr-12/)
+[![Licence](https://img.shields.io/badge/Knot%20Core-GPL--3.0-EC4899?style=flat-square)](#-licence)
+[![Marque](https://img.shields.io/badge/Knot%20Tools-™-8B5CF6?style=flat-square)](#-marque)
 
 </div>
 
 ---
 
-## Ce que nous construisons
+## 🧰 Ce que nous construisons
 
-Une petite famille d'outils qui transforment **Dolibarr** en véritable plateforme d'automatisation — éditeur visuel, support natif des objets, 100 % self-hosted à côté de l'ERP. **Knot Tools™** désigne le produit, la marque et l'écosystème.
-
-<table>
-<tr>
-<td width="50%" valign="top">
+Une petite famille de produits qui transforment **Dolibarr** en véritable plateforme d'automatisation — un éditeur visuel à l'intérieur de l'ERP, un pack de connecteurs premium, un assistant de migration pour les instances entrantes, et le site produit. **Knot Tools™** est la marque et l'ombrelle de tout ce qui suit.
 
 ### 🪢 Knot Core
-L'éditeur visuel de workflows à l'intérieur de Dolibarr. Canvas drag-and-drop, objets natifs (tiers, factures, propals, projets, stocks…), exécution via le cron Dolibarr, multi-entité, permissions granulaires, journal d'audit. **Open source sous GPL-3.0.**
 
-</td>
-<td width="50%" valign="top">
+L'éditeur visuel de workflows à l'intérieur de Dolibarr. Canvas drag-and-drop, objets natifs (tiers, factures, propals, projets, stocks, contacts…), exécution via le cron Dolibarr, multi-entité, permissions granulaires, journal d'audit complet. **Open source sous GPL-3.0.**
 
 ### 🧩 Knot Pro Pack
-Connecteurs premium qui étendent la palette du Core : HTTP sortant, APIs SaaS (Stripe, Google Workspace, Shopify…), nœuds IA (dont **Ollama** local), SFTP, Telegram, fan-out d'alertes multi-canal. Branchés à Knot via le manifest d'extension public.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+Connecteurs premium qui étendent la palette du Core : HTTP sortant, APIs SaaS (Stripe, Google Workspace, Shopify…), nœuds IA dont **Ollama** local, SFTP, Telegram, fan-out d'alertes multi-canal. Branchés à Knot via le manifest d'extension public, signés et pinnés par version.
 
 ### 🚚 Knot Migration
-Assistant de migration Dolibarr-vers-Dolibarr pour les instances issues d'anciennes versions ou d'autres ERP. Mapping de schéma, dry-run, transferts idempotents, audit. Utilisé en interne pour l'onboarding.
 
-</td>
-<td width="50%" valign="top">
+Assistant de migration pour les instances Dolibarr venant d'anciennes versions ou d'autres ERP. Mapping de schéma, dry-run avec diff, transferts idempotents, journal d'audit. Utilisé en interne pour l'onboarding des nouveaux bêta-testeurs et clients.
 
 ### 🌐 knot.tools
-Le site produit — inscription bêta, actualités, pointeurs vers la documentation. Sobre, sans tracker, sans cookie. Contact : **`contact@knot.tools`** *(réponse humaine, pas d'autorépondeur)*.
 
-</td>
-</tr>
-</table>
+Le site produit — inscription bêta, actualités, pointeurs vers la documentation au fur et à mesure de son ouverture. Sobre, sans tracker, sans cookie. Contact : **`contact@knot.tools`** *(réponse humaine, pas d'autorépondeur)*.
 
 ---
 
-## Pourquoi des workflows visuels pour Dolibarr
+## ✨ Ce qui le distingue
 
-<table>
-<tr>
-<td width="25%" align="center" valign="top">
+#### 🎨 &nbsp; Éditeur visuel
+Canvas Vue Flow, mode sombre, palette **Cmd+K**, undo / redo, copier-coller, auto-layout, UX clavier-first. Inspecteur multi-onglets avec validation TypeScript live et panneau Problèmes.
 
-### 🎨
-**Éditeur visuel**
+#### 🪢 &nbsp; Natif Dolibarr
+Triggers sur les objets natifs **Dolibarr V20+** : tiers, factures, propals, projets, stocks, contacts, tickets, agenda, membres et plus. Pas de pont, pas de proxy : Knot parle le modèle objet de Dolibarr lui-même.
 
-Canvas Vue Flow, mode sombre, palette **Cmd+K**, undo/redo, raccourcis clavier.
+#### 🔒 &nbsp; 100 % self-hosted
+Vos données restent chez vous. **AES-256-GCM** pour les credentials au repos, masqués dans tous les logs et UI. HTTP sortant durci anti-**SSRF** avec mitigation **DNS-rebinding** (épinglage IP via `CURLOPT_RESOLVE`). Aucun cloud obligatoire, aucune télémétrie, aucun phone-home.
 
-</td>
-<td width="25%" align="center" valign="top">
+#### 🌍 &nbsp; Multi-entité
+Isolation stricte par entité Dolibarr — chaque requête repository filtre sur l'entité active, chaque credential est scoped, chaque entrée d'audit log est étiquetée. **Permissions Dolibarr granulaires** appliquées pour chaque capacité Knot.
 
-### 🪢
-**Natif Dolibarr**
+#### 🧬 &nbsp; Résilient par conception
+Politiques de retry par nœud, backoff exponentiel, routes d'erreur, clés d'idempotence, rate-limiting webhook et OAuth, traces d'exécution structurées, inbox d'exécution live. Une vue **Doctor** intégrée diagnostique la santé du module.
 
-Triggers sur les objets V20+ : tiers, factures, propals, projets, stocks, contacts…
-
-</td>
-<td width="25%" align="center" valign="top">
-
-### 🔒
-**100 % self-hosted**
-
-Vos données restent chez vous. Credentials AES-256-GCM, audit log, HTTP durci anti-SSRF, aucun cloud obligatoire.
-
-</td>
-<td width="25%" align="center" valign="top">
-
-### 🌍
-**Multi-entité**
-
-Isolation stricte par entité. Permissions Dolibarr granulaires partout.
-
-</td>
-</tr>
-</table>
+#### 🌐 &nbsp; International dès le premier jour
+Strings intégrées en **FR · EN · ES · IT · PT · DE**. Chaque chaîne utilisateur passe par la couche de traduction Dolibarr — aucun texte UI en dur.
 
 ---
 
-## Statut
+## 🔬 Fiabilité & qualité
+
+Nous traitons la fiabilité comme une fonctionnalité, pas une réflexion après coup.
+
+#### 🧪 &nbsp; Suites de tests
+**PHPUnit** — 605 tests · 2 013 assertions · 98 fichiers de test, avec une couverture cible de **80 %** sur le moteur et la couche repository.<br>
+**Vitest** — tests unitaires et de composants frontend sur chaque commit.<br>
+**Playwright** — scénarios end-to-end de l'éditeur exécutés sur de vraies instances Dolibarr.
+
+#### 🔁 &nbsp; Matrice CI
+L'intégration continue lance la suite backend complète sur **Dolibarr 20.0 · 21.0 · 22.0** combinés avec **PHP 8.1 · 8.2 · 8.3** (neuf combinaisons) sur chaque push vers `main` et chaque pull request, plus un job build frontend + Vitest et un job PHPCS PSR-12 strict. **Aucun contournement `|| true`** nulle part — une régression bloque le merge.
+
+#### 🛡️ &nbsp; Sécurité continue
+Un workflow de sécurité dédié tourne sur chaque push et hebdomadairement :
+**Gitleaks** (scan de secrets sur l'historique complet) · **`composer audit`** (advisories PHP) · **`npm audit`** (dépendances frontend de production, sévérité haute).
+Le HTTP sortant passe par **`Knot\Security\UrlPolicy`**, qui valide l'hôte, bloque les plages IP privées et metadata, et épingle l'adresse résolue à travers cURL pour empêcher les attaques **DNS-rebinding**.
+
+#### 🔐 &nbsp; Cryptographie & audit
+Credentials chiffrés au repos en **AES-256-GCM**, jamais loggés, jamais exportés.<br>
+Chaque action sensible est loggée dans le journal immutable **`llx_knot_audit_log`** avec recherche full-text serveur et export CSV.<br>
+Les manifestes de release du Pro Pack sont **signés Ed25519** et épinglés par le vérifieur du Core.
+
+#### 📐 &nbsp; Style de code
+**PSR-12 strict** avec un ruleset projet (`phpcs.xml.dist`) aligné sur Symfony, Laravel, PHPUnit et Composer. **Conventional Commits** appliqués sur chaque dépôt.
+
+---
+
+## 📦 Statut
 
 🚀 &nbsp; **Knot est en bêta privée.** Le code source vit dans des dépôts privés pendant la bêta. **Knot Core** est destiné à une publication open source sous **GPL-3.0** une fois la chaîne de licence scellée (prévu avant le lancement public du Pro Pack). Les notes de version publiques et l'onboarding des testeurs sont publiés sur **[knot.tools](https://knot.tools)**.
 
-🔬 &nbsp; **Testé sur toute la matrice.** L'intégration continue tourne sur **Dolibarr 20 / 21 / 22**, **PHP 8.1 / 8.2 / 8.3**, avec PHPUnit, Vitest, PHP_CodeSniffer (PSR-12), `composer audit`, `npm audit` et un scan hebdomadaire de secrets via Gitleaks.
-
-📜 &nbsp; **Knot Tools™** est une marque en cours de dépôt. L'usage de la marque nécessite l'autorisation écrite du titulaire ; écrivez à `contact@knot.tools`.
+📜 &nbsp; **Knot Tools™** est une marque en cours de dépôt. Le module produit est référencé simplement comme **Knot** dans les contextes techniques et **Knot Core** dans les contextes de distribution ; la marque ombrelle est **Knot Tools**.
 
 ---
 
-## Nous trouver
+## 🧭 Nous trouver
 
 | | |
 |---|---|
@@ -121,11 +120,11 @@ Isolation stricte par entité. Permissions Dolibarr granulaires partout.
 
 ---
 
-## Marque
+## 🏷️ Marque
 
 **Knot Tools™** est une marque en cours de dépôt. Vous pouvez référencer le projet dans un cadre éditorial, technique ou comparatif. Vous ne pouvez pas utiliser la marque d'une manière qui suggère une recommandation, un partenariat ou une origine Knot Tools sans autorisation écrite. Le logo Knot et les éléments graphiques proviennent du brand pack officiel distribué avec **Knot Core**.
 
-## Licence
+## 📄 Licence
 
 **Knot Core** est publié sous **GPL-3.0-or-later**. Les autres composants de l'écosystème **Knot Tools** peuvent être distribués sous d'autres termes — consultez le dépôt correspondant lors de sa publication.
 
