@@ -141,7 +141,7 @@ We treat reliability as a feature, not an afterthought.
 <td width="50%" valign="top">
 
 ### 🧪 &nbsp; Test suites
-**PHPUnit** — 605 tests · 2 013 assertions · 98 test files, with a target coverage of **80 %** on the engine and repository layers.<br>
+**PHPUnit** — 605 tests · 2 013 assertions, with a target coverage of **80 %** on the engine and repository layers.<br>
 **Vitest** — frontend unit and component tests on every commit.<br>
 **Playwright** — end-to-end editor scenarios on real Dolibarr instances.
 
@@ -149,17 +149,16 @@ We treat reliability as a feature, not an afterthought.
 <td width="50%" valign="top">
 
 ### 🔁 &nbsp; CI matrix
-Backend test suite runs against **Dolibarr 20.0 · 21.0 · 22.0** combined with **PHP 8.1 · 8.2 · 8.3** (nine combinations) on every push and pull request, plus a frontend build + Vitest job and a PHPCS PSR-12 strict job. **No `\|\| true`** workaround anywhere — a regression fails the merge.
+Backend test suite runs against **Dolibarr 20.0 · 21.0 · 22.0** combined with **PHP 8.1 · 8.2 · 8.3** (nine combinations) on every push and pull request, plus a frontend build + Vitest job and a PSR-12 strict style check.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🛡️ &nbsp; Continuous security
-A dedicated workflow runs on every push and weekly on a schedule:<br>
-**Gitleaks** (full-history secret scanning) · **`composer audit`** (PHP advisories) · **`npm audit`** (frontend prod dependencies, high severity).<br>
-Outbound HTTP goes through `Knot\Security\UrlPolicy`, which validates the host, blocks private and metadata IP ranges, and pins the resolved address through cURL to prevent **DNS-rebinding** attacks.
+### 🛡️ &nbsp; Hardened by design
+Outbound HTTP goes through `Knot\Security\UrlPolicy`: every URL is validated, **private and cloud-metadata IP ranges are blocked**, and the resolved address is pinned through cURL to prevent **DNS-rebinding** attacks.<br>
+**Dependency advisories** are continuously monitored (PHP and frontend) so a vulnerable upstream library is caught before it ships.
 
 </td>
 <td width="50%" valign="top">
@@ -172,8 +171,6 @@ Release manifests for the Pro Pack are **Ed25519-signed** and pinned by the Core
 </td>
 </tr>
 </table>
-
-**Code style.** PSR-12 strict with a project ruleset (`phpcs.xml.dist`) aligned with Symfony, Laravel, PHPUnit and Composer. **Conventional Commits** enforced on every repository.
 
 ---
 

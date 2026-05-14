@@ -141,7 +141,7 @@ Nous traitons la fiabilité comme une fonctionnalité, pas une réflexion après
 <td width="50%" valign="top">
 
 ### 🧪 &nbsp; Suites de tests
-**PHPUnit** — 605 tests · 2 013 assertions · 98 fichiers de test, avec une couverture cible de **80 %** sur le moteur et la couche repository.<br>
+**PHPUnit** — 605 tests · 2 013 assertions, avec une couverture cible de **80 %** sur le moteur et la couche repository.<br>
 **Vitest** — tests unitaires et de composants frontend sur chaque commit.<br>
 **Playwright** — scénarios end-to-end de l'éditeur sur de vraies instances Dolibarr.
 
@@ -149,17 +149,16 @@ Nous traitons la fiabilité comme une fonctionnalité, pas une réflexion après
 <td width="50%" valign="top">
 
 ### 🔁 &nbsp; Matrice CI
-La suite backend tourne sur **Dolibarr 20.0 · 21.0 · 22.0** combinés avec **PHP 8.1 · 8.2 · 8.3** (neuf combinaisons) sur chaque push et pull request, plus un job build frontend + Vitest et un job PHPCS PSR-12 strict. **Aucun contournement `\|\| true`** nulle part — une régression bloque le merge.
+La suite backend tourne sur **Dolibarr 20.0 · 21.0 · 22.0** combinés avec **PHP 8.1 · 8.2 · 8.3** (neuf combinaisons) sur chaque push et pull request, plus un job build frontend + Vitest et une vérification de style PSR-12 stricte.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🛡️ &nbsp; Sécurité continue
-Un workflow dédié tourne sur chaque push et hebdomadairement :<br>
-**Gitleaks** (scan de secrets sur l'historique complet) · **`composer audit`** (advisories PHP) · **`npm audit`** (dépendances frontend de production, sévérité haute).<br>
-Le HTTP sortant passe par `Knot\Security\UrlPolicy`, qui valide l'hôte, bloque les plages IP privées et metadata, et épingle l'adresse résolue à travers cURL pour empêcher les attaques **DNS-rebinding**.
+### 🛡️ &nbsp; Durci par conception
+Le HTTP sortant passe par `Knot\Security\UrlPolicy` : chaque URL est validée, les **plages IP privées et de cloud-metadata sont bloquées**, et l'adresse résolue est épinglée à travers cURL pour empêcher les attaques **DNS-rebinding**.<br>
+Les **advisories de dépendances** sont surveillées en continu (PHP et frontend) pour qu'une bibliothèque amont vulnérable soit détectée avant d'atteindre la prod.
 
 </td>
 <td width="50%" valign="top">
@@ -172,8 +171,6 @@ Les manifestes de release du Pro Pack sont **signés Ed25519** et épinglés par
 </td>
 </tr>
 </table>
-
-**Style de code.** PSR-12 strict avec un ruleset projet (`phpcs.xml.dist`) aligné sur Symfony, Laravel, PHPUnit et Composer. **Conventional Commits** appliqués sur chaque dépôt.
 
 ---
 
