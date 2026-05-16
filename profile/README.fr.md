@@ -49,6 +49,8 @@ Connecteurs premium qui étendent la palette du Core : HTTP sortant, APIs SaaS (
 
 Branchés via le manifest d'extension public, **signés et pinnés par version**.
 
+**Extension commerciale** distribuée selon des conditions distinctes — détails sur **[knot.tools](https://knot.tools)** dès que disponibles.
+
 </td>
 </tr>
 <tr>
@@ -57,7 +59,7 @@ Branchés via le manifest d'extension public, **signés et pinnés par version**
 ### 🚚 &nbsp; Knot Migration
 Assistant de migration pour les instances Dolibarr venant d'anciennes versions ou d'autres ERP. Mapping de schéma, dry-run avec diff, transferts idempotents, journal d'audit.
 
-Actuellement utilisé en interne pour l'onboarding des nouveaux bêta-testeurs. Une distribution autonome est prévue ultérieurement.
+Actuellement utilisé en interne pour l'onboarding des nouveaux bêta-testeurs. **Extension commerciale** dont la distribution autonome est prévue ultérieurement — détails sur **[knot.tools](https://knot.tools)** dès que disponibles.
 
 </td>
 <td width="50%" valign="top">

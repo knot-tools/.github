@@ -49,6 +49,8 @@ Premium connectors that extend the Core palette: outbound HTTP, SaaS APIs (Strip
 
 Plugged in via the public extension manifest, **signed and version-pinned**.
 
+**Commercial extension** distributed under separate terms — details on **[knot.tools](https://knot.tools)** when available.
+
 </td>
 </tr>
 <tr>
@@ -57,7 +59,7 @@ Plugged in via the public extension manifest, **signed and version-pinned**.
 ### 🚚 &nbsp; Knot Migration
 A migration assistant for Dolibarr instances coming from older versions or from other ERPs. Schema mapping, dry-run with diff, idempotent transfers, audit trail.
 
-Currently used in-house to onboard new beta testers. A standalone release is planned at a later stage.
+Currently used in-house to onboard new beta testers. **Commercial extension** with a standalone release planned at a later stage — details on **[knot.tools](https://knot.tools)** when available.
 
 </td>
 <td width="50%" valign="top">
