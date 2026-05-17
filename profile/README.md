@@ -212,4 +212,6 @@ Release manifests for the Pro Pack are **Ed25519-signed** and pinned by the Core
 *Knot Tools™ — visual workflow automation for Dolibarr.*<br>
 *Made with care, hosted nowhere by default.*
 
+<sub>Made with ❤️ &amp; Grind.</sub>
+
 </div>

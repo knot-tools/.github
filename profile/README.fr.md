@@ -212,4 +212,6 @@ Les manifestes de release du Pro Pack sont **signés Ed25519** et épinglés par
 *Knot Tools™ — automatisation visuelle de workflows pour Dolibarr.*<br>
 *Conçu avec soin, hébergé nulle part par défaut.*
 
+<sub>Made with ❤️ &amp; Grind.</sub>
+
 </div>
