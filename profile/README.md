@@ -12,7 +12,7 @@
 
 *🇬🇧 English · [🇫🇷 Lire en français](README.fr.md)*
 
-[![Status](https://img.shields.io/badge/status-private%20beta-8B5CF6?style=flat-square)](https://knot.tools)
+[![Status](https://img.shields.io/badge/status-public%20beta-8B5CF6?style=flat-square)](https://github.com/knot-tools/knot-core)
 [![Dolibarr](https://img.shields.io/badge/Dolibarr-V20%2B-1F2937?style=flat-square)](https://www.dolibarr.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -39,7 +39,7 @@ A small family of products that turn **Dolibarr** into a real automation platfor
 ### 🪢 &nbsp; Knot Core
 The visual workflow editor that lives inside Dolibarr. Drag-and-drop canvas, native objects (third-parties, invoices, proposals, projects, stocks, contacts…), execution via the Dolibarr cron, multi-entity, granular permissions, full audit log.
 
-**Open source under GPL-3.0.**
+**Open source under GPL-3.0** — source on **[github.com/knot-tools/knot-core](https://github.com/knot-tools/knot-core)**, ZIP at **[knot.tools/downloads](https://knot.tools/downloads/knot-core/latest)**.
 
 </td>
 <td width="50%" valign="top">
@@ -49,7 +49,7 @@ Premium connectors that extend the Core palette: outbound HTTP, SaaS APIs (Strip
 
 Plugged in via the public extension manifest, **signed and version-pinned**.
 
-**Commercial extension** distributed under separate terms — details on **[knot.tools](https://knot.tools)** when available.
+**Commercial extension** — purchase and signed delivery via **[license.knot.tools](https://license.knot.tools)** · overview on **[knot.tools/pro-pack](https://knot.tools/pro-pack/)**.
 
 </td>
 </tr>
@@ -59,13 +59,13 @@ Plugged in via the public extension manifest, **signed and version-pinned**.
 ### 🚚 &nbsp; Knot Migration
 A migration assistant for Dolibarr instances coming from older versions or from other ERPs. Schema mapping, dry-run with diff, idempotent transfers, audit trail.
 
-Currently used in-house to onboard new beta testers. **Commercial extension** with a standalone release planned at a later stage — details on **[knot.tools](https://knot.tools)** when available.
+**Commercial extension** for Dolibarr upgrades — purchase via **[license.knot.tools](https://license.knot.tools)** · overview on **[knot.tools/migration](https://knot.tools/migration/)**.
 
 </td>
 <td width="50%" valign="top">
 
 ### 🌐 &nbsp; knot.tools
-The product website — beta signup, news, pointers to the documentation as it opens up.
+The product website — **Knot Core** download, extension beta signup, documentation links.
 
 Sober, no tracker, no cookie. Reach us at **`contact@knot.tools`** *(human reply, not an autoresponder)*.
 
@@ -178,9 +178,11 @@ Release manifests for the Pro Pack are **Ed25519-signed** and pinned by the Core
 
 ## 📦 Status
 
-🚀 &nbsp; **Knot is in private beta.** Source code lives in private repositories during the beta. **Knot Core** is destined for public release under **GPL-3.0** once the licence-chain backbone is sealed (planned ahead of the public Pro Pack launch). Public release notes and tester onboarding are published on **[knot.tools](https://knot.tools)**.
+🚀 &nbsp; **Knot Core is in public beta under GPL-3.0.** Source, issues, and pull requests: **[github.com/knot-tools/knot-core](https://github.com/knot-tools/knot-core)**. Signed ZIP releases: **[knot.tools/downloads/knot-core/latest](https://knot.tools/downloads/knot-core/latest)**. Documentation: **[docs.knot.tools](https://docs.knot.tools/)**.
 
-📜 &nbsp; **Knot Tools™** is a trademark filing in progress. The product module is referred to simply as **Knot** in technical contexts and **Knot Core** in distribution contexts; the umbrella brand is **Knot Tools**.
+🧩 &nbsp; **Pro Pack** and **Migration** are commercial extensions (PolyForm Shield) — beta access via **[knot.tools/beta](https://knot.tools/beta/)**, purchase via **[license.knot.tools](https://license.knot.tools)**.
+
+📜 &nbsp; **Knot Tools™** is a registered trademark. The product module is referred to simply as **Knot** in technical contexts and **Knot Core** in distribution contexts; the umbrella brand is **Knot Tools**.
 
 ---
 
