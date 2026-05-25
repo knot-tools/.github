@@ -12,7 +12,11 @@
 
 *[🇬🇧 Read in English](README.md) · 🇫🇷 Français*
 
+> **Knot Core — bêta publique** — site produit : **[knot.tools](https://knot.tools)**. Documentation : **[docs.knot.tools](https://docs.knot.tools/)**. **Pro Pack** et **Migration** — bêta privée via **[knot.tools/beta](https://knot.tools/beta/)**.
+
 [![Statut](https://img.shields.io/badge/statut-b%C3%AAta%20publique-8B5CF6?style=flat-square)](https://github.com/knot-tools/knot-core)
+[![CI](https://github.com/knot-tools/knot-core/actions/workflows/ci.yml/badge.svg)](https://github.com/knot-tools/knot-core/actions/workflows/ci.yml)
+[![Knot Core](https://img.shields.io/github/v/release/knot-tools/knot-core?label=Knot%20Core&style=flat-square&color=8B5CF6)](https://github.com/knot-tools/knot-core/releases/latest)
 [![Dolibarr](https://img.shields.io/badge/Dolibarr-V20%2B-1F2937?style=flat-square)](https://www.dolibarr.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -180,7 +184,7 @@ Les manifestes de release du Pro Pack sont **signés Ed25519** et épinglés par
 
 🚀 &nbsp; **Knot Core est en bêta publique sous GPL-3.0.** Code, issues et pull requests : **[github.com/knot-tools/knot-core](https://github.com/knot-tools/knot-core)**. Releases ZIP signées : **[knot.tools/downloads/knot-core/latest](https://knot.tools/downloads/knot-core/latest)**. Documentation : **[docs.knot.tools](https://docs.knot.tools/)**.
 
-🧩 &nbsp; **Pro Pack** et **Migration** sont des extensions commerciales (PolyForm Shield) — accès bêta via **[knot.tools/beta](https://knot.tools/beta/)**, achat via **[license.knot.tools](https://license.knot.tools)**.
+🧩 &nbsp; **Pro Pack** et **Migration** sont des extensions commerciales (PolyForm Shield) en **bêta privée** — accès via **[knot.tools/beta](https://knot.tools/beta/)**, achat via **[license.knot.tools](https://license.knot.tools)**.
 
 📜 &nbsp; **Knot Tools™** est une marque déposée. Le module produit est référencé simplement comme **Knot** dans les contextes techniques et **Knot Core** dans les contextes de distribution ; la marque ombrelle est **Knot Tools**.
 
