@@ -17,7 +17,7 @@
 [![Status](https://img.shields.io/badge/status-public%20beta-8B5CF6?style=flat-square)](https://github.com/knot-tools/knot-core)
 [![CI](https://github.com/knot-tools/knot-core/actions/workflows/ci.yml/badge.svg)](https://github.com/knot-tools/knot-core/actions/workflows/ci.yml)
 [![Knot Core](https://img.shields.io/github/v/release/knot-tools/knot-core?label=Knot%20Core&style=flat-square&color=8B5CF6)](https://github.com/knot-tools/knot-core/releases/latest)
-[![Dolibarr](https://img.shields.io/badge/Dolibarr-V20%2B-1F2937?style=flat-square)](https://www.dolibarr.org)
+[![Dolibarr](https://img.shields.io/badge/Dolibarr-V20%E2%80%93V24-1F2937?style=flat-square)](https://www.dolibarr.org)
 [![PHP](https://img.shields.io/badge/PHP-8.1%2B-777BB4?style=flat-square&logo=php&logoColor=white)](https://www.php.net)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Vue](https://img.shields.io/badge/Vue-3.5-42B883?style=flat-square&logo=vue.js&logoColor=white)](https://vuejs.org)
@@ -96,7 +96,7 @@ Vue Flow canvas, dark mode, **Cmd+K** palette, undo / redo, keyboard-first UX, m
 ### 🪢
 **Native to Dolibarr**
 
-Triggers on Dolibarr **V20+** native objects: third-parties, invoices, proposals, projects, stocks, contacts, tickets, agenda, members…
+Triggers on Dolibarr **V20–V24** native objects: third-parties, invoices, proposals, projects, stocks, contacts, tickets, agenda, members…
 
 </td>
 <td width="33%" align="center" valign="top">
@@ -155,7 +155,7 @@ We treat reliability as a feature, not an afterthought.
 <td width="50%" valign="top">
 
 ### 🔁 &nbsp; CI matrix
-Backend test suite runs against **Dolibarr 20.0 · 21.0 · 22.0** combined with **PHP 8.1 · 8.2 · 8.3** (nine combinations) on every push and pull request, plus a frontend build + Vitest job and a PSR-12 strict style check.
+Backend integration runs against **Dolibarr 20.0–24.0** on **PHP 8.2**, with unit tests on **PHP 8.1 · 8.2 · 8.3**, on every push and pull request, plus a frontend build + Vitest job and a PSR-12 strict style check.
 
 </td>
 </tr>
