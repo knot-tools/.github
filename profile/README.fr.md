@@ -186,7 +186,7 @@ Les manifestes de release du Pro Pack sont **signés Ed25519** et épinglés par
 
 🧩 &nbsp; **Pro Pack** et **Migration** sont des extensions commerciales (PolyForm Shield) en **bêta privée** — accès via **[knot.tools/beta](https://knot.tools/beta/)**, achat via **[license.knot.tools](https://license.knot.tools)**.
 
-📜 &nbsp; **Knot Tools™** est une marque déposée. Le module produit est référencé simplement comme **Knot** dans les contextes techniques et **Knot Core** dans les contextes de distribution ; la marque ombrelle est **Knot Tools**.
+📜 &nbsp; **Knot Tools™** est une marque de Sébastien Audel. Le module produit est référencé simplement comme **Knot** dans les contextes techniques et **Knot Core** dans les contextes de distribution ; la marque ombrelle est **Knot Tools**.
 
 ---
 
@@ -205,7 +205,7 @@ Les manifestes de release du Pro Pack sont **signés Ed25519** et épinglés par
 
 ## 🏷️ Marque
 
-**Knot Tools™** est une marque en cours de dépôt. Vous pouvez référencer le projet dans un cadre éditorial, technique ou comparatif. Vous ne pouvez pas utiliser la marque d'une manière qui suggère une recommandation, un partenariat ou une origine Knot Tools sans autorisation écrite. Le logo Knot et les éléments graphiques proviennent du brand pack officiel distribué avec **Knot Core**.
+**Knot Tools™** est une marque de Sébastien Audel. Vous pouvez référencer le projet dans un cadre éditorial, technique ou comparatif. Vous ne pouvez pas utiliser la marque d'une manière qui suggère une recommandation, un partenariat ou une origine Knot Tools sans autorisation écrite. Le logo Knot et les éléments graphiques proviennent du brand pack officiel distribué avec **Knot Core**.
 
 ## 📄 Licence
 
